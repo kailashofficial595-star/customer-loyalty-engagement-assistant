@@ -1,0 +1,48 @@
+{
+  "version": "1.0.0",
+  "min_contact_cooldown_days": 7,
+  "blocked_terms": [
+    "seize your property",
+    "threaten legal arrest",
+    "criminal prosecution",
+    "deadbeat",
+    "pay immediately or else",
+    "guaranteed 1000% return",
+    "free money glitch",
+    "act within 1 hour or lose everything",
+    "shameful conduct",
+    "lawsuit incoming"
+  ],
+  "pii_patterns": [
+    {
+      "name": "CREDIT_CARD_NUMBER",
+      "regex": "\\b(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|6(?:011|5[0-9]{2})[0-9]{12})\\b"
+    },
+    {
+      "name": "SSN_US",
+      "regex": "\\b(?!000|666|9\\d{2})\\d{3}-(?!00)\\d{2}-(?!0000)\\d{4}\\b"
+    },
+    {
+      "name": "RAW_PASSWORD",
+      "regex": "(?i)\\b(?:password|pwd|secret)\\s*[:=]\\s*['\"][^'\"]{4,}['\"]"
+    }
+  ],
+  "mandatory_elements": {
+    "payment_reminder": [
+      "dispute",
+      "support",
+      "amount",
+      "due date"
+    ],
+    "promotional": [
+      "unsubscribe",
+      "terms",
+      "preferences"
+    ]
+  },
+  "groundedness_validation": {
+    "enforce_strict_amount_matching": true,
+    "enforce_plan_name_matching": true,
+    "enforce_customer_name_matching": true
+  }
+}

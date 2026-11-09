@@ -1,0 +1,99 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-11-09",
+  "segments": {
+    "loyalty_candidate": {
+      "display_name": "Loyalty & VIP Candidate",
+      "priority": 10,
+      "objective": "VIP_REWARD_RECOGNITION",
+      "tone": "CELEBRATORY_PRESTIGIOUS",
+      "description": "High-tenure, top-tier or high-spending customers with pristine payment records and high satisfaction.",
+      "guidelines": "Express deep gratitude, recognize tier status, highlight exclusive curated rewards without promotional pressure.",
+      "conditions": {
+        "max_days_overdue": 0,
+        "max_outstanding_balance": 0.0,
+        "min_tenure_months": 12,
+        "min_monthly_spend": 75.0,
+        "min_csat_score": 8.0,
+        "allowed_tiers": ["GOLD", "PLATINUM", "DIAMOND"]
+      }
+    },
+    "payment_reminder": {
+      "display_name": "Payment Follow-up / Overdue",
+      "priority": 20,
+      "objective": "PAYMENT_REMINDER_PROGRESSION",
+      "tone": "VARIABLE_RESPECTFUL",
+      "description": "Accounts with positive overdue balances requiring staged notification and dispute resolution.",
+      "guidelines": "Never combine with promotional marketing. State exact verified amount and due date. Provide dispute and hardship paths.",
+      "stages": {
+        "stage_1": {
+          "label": "Courteous Reminder",
+          "min_days_overdue": 1,
+          "max_days_overdue": 15,
+          "tone": "COURTEOUS_RESPECTFUL",
+          "intent": "Gentle prompt assuming innocent delay or billing transition."
+        },
+        "stage_2": {
+          "label": "Urgent Follow-up",
+          "min_days_overdue": 16,
+          "max_days_overdue": 30,
+          "tone": "DIRECT_FIRM",
+          "intent": "Clear notice of pending disruption risk and prompt payment arrangement options."
+        },
+        "stage_3": {
+          "label": "Final Notice & Assistance",
+          "min_days_overdue": 31,
+          "max_days_overdue": 999,
+          "tone": "SERIOUS_URGENT_SUPPORTIVE",
+          "intent": "Formal overdue notice emphasizing hardship assistance and immediate resolution."
+        }
+      }
+    },
+    "declining_activity": {
+      "display_name": "Declining Activity",
+      "priority": 30,
+      "objective": "VALUE_REENGAGEMENT",
+      "tone": "HELPFUL_ENCOURAGING",
+      "description": "Customers whose product usage or feature engagement has dropped sharply without payment default.",
+      "guidelines": "Acknowledge changing usage needs, propose tailored feature optimization or data boost, invite feedback.",
+      "conditions": {
+        "max_days_overdue": 0,
+        "max_outstanding_balance": 0.0,
+        "max_usage_trend_pct": -20.0,
+        "max_days_since_activity": 45
+      }
+    },
+    "dormant": {
+      "display_name": "Dormant / Inactive Customer",
+      "priority": 40,
+      "objective": "WINBACK_SURVEY",
+      "tone": "LOW_PRESSURE_SUPPORTIVE",
+      "description": "Customers with no recent activity for extended periods who may be at churn risk.",
+      "guidelines": "Gentle check-in, respect their space, invite honest feedback on service fit, offer low-friction welcome back.",
+      "conditions": {
+        "max_days_overdue": 0,
+        "max_outstanding_balance": 0.0,
+        "min_days_since_activity": 46
+      }
+    },
+    "consistent": {
+      "display_name": "Consistent & Reliable Customer",
+      "priority": 50,
+      "objective": "APPRECIATION_RETENTION",
+      "tone": "WARM_GRATITUDE",
+      "description": "Solid ongoing engagement, steady plan adoption, and reliable on-time payments.",
+      "guidelines": "Reinforce loyalty value, thank them for their ongoing partnership, share relevant perk if eligible.",
+      "conditions": {
+        "max_days_overdue": 0,
+        "max_outstanding_balance": 0.0,
+        "min_tenure_months": 6,
+        "min_usage_trend_pct": -20.0
+      }
+    }
+  },
+  "required_disclaimers": {
+    "billing": "If you have already remitted payment within the last 48 hours, please accept our thanks and disregard this notice. For payment plans or dispute review, contact customer support at support@telecom-retail.example.com.",
+    "general": "You received this email according to your account communication preferences. Manage preferences in your customer portal.",
+    "offer": "Terms, conditions, and eligibility criteria apply. Offers cannot be exchanged for cash and are valid through the stated expiry date."
+  }
+}

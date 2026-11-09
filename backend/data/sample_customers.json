@@ -1,0 +1,354 @@
+[
+  {
+    "scenario_id": "SCENARIO_1_CONSISTENT",
+    "scenario_title": "Consistent & Reliable Customer",
+    "description": "Steady usage, 18-month tenure, flawless on-time payment track record.",
+    "expected_segment": "consistent",
+    "expected_action": "Generate appreciation message with complimentary 20GB Loyalty Boost.",
+    "profile": {
+      "customer_id": "CUST-1001",
+      "full_name": "Elena Vance",
+      "email": "elena.vance@example.com",
+      "account_type": "5G_UNLIMITED_POSTPAID",
+      "billing": {
+        "outstanding_balance": 0.0,
+        "days_overdue": 0,
+        "invoice_number": "INV-2026-1001",
+        "due_date": "2026-11-28",
+        "last_payment_date": "2026-10-28",
+        "last_payment_amount": 65.00,
+        "payment_method_on_file": true,
+        "late_payment_count_12m": 0
+      },
+      "engagement": {
+        "tenure_months": 18,
+        "current_plan_name": "5G Unlimited Plus",
+        "monthly_spend": 65.00,
+        "loyalty_tier": "SILVER",
+        "csat_score": 8.8,
+        "nps_category": "PROMOTER",
+        "usage_trend_pct": 2.5,
+        "days_since_last_activity": 1,
+        "data_allowance_gb": 50.0,
+        "data_used_gb": 42.0
+      },
+      "communication": {
+        "last_contact_date": "2026-10-01",
+        "last_contact_channel": "EMAIL",
+        "last_contact_category": "MONTHLY_STATEMENT",
+        "contact_count_last_30d": 1,
+        "email_opt_in": true,
+        "sms_opt_in": true
+      },
+      "tags": ["autopay_enrolled", "consistent_usage", "low_support_touch"]
+    }
+  },
+  {
+    "scenario_id": "SCENARIO_2_LOYALTY_VIP",
+    "scenario_title": "Loyalty & VIP Candidate",
+    "description": "36-month tenure, top monthly spend ($110), Platinum tier, top CSAT score.",
+    "expected_segment": "loyalty_candidate",
+    "expected_action": "Celebrate VIP milestone, award 3-Month Premium Entertainment Pass.",
+    "profile": {
+      "customer_id": "CUST-1002",
+      "full_name": "Marcus Aurelius Chen",
+      "email": "marcus.chen@example.com",
+      "account_type": "FIBER_GIGABIT_ENTERTAINMENT",
+      "billing": {
+        "outstanding_balance": 0.0,
+        "days_overdue": 0,
+        "invoice_number": "INV-2026-1002",
+        "due_date": "2026-12-05",
+        "last_payment_date": "2026-11-05",
+        "last_payment_amount": 110.00,
+        "payment_method_on_file": true,
+        "late_payment_count_12m": 0
+      },
+      "engagement": {
+        "tenure_months": 36,
+        "current_plan_name": "Gigabit Ultra Fiber & Mobile",
+        "monthly_spend": 110.00,
+        "loyalty_tier": "PLATINUM",
+        "csat_score": 9.7,
+        "nps_category": "PROMOTER",
+        "usage_trend_pct": 5.0,
+        "days_since_last_activity": 0,
+        "data_allowance_gb": 1000.0,
+        "data_used_gb": 680.0
+      },
+      "communication": {
+        "last_contact_date": "2026-09-15",
+        "last_contact_channel": "EMAIL",
+        "last_contact_category": "TIER_UPGRADE",
+        "contact_count_last_30d": 0,
+        "email_opt_in": true,
+        "sms_opt_in": true
+      },
+      "tags": ["vip_diamond_track", "high_spend", "advocate"]
+    }
+  },
+  {
+    "scenario_id": "SCENARIO_3_DECLINING_ACTIVITY",
+    "scenario_title": "Declining-Activity Customer",
+    "description": "Consumption dropped 38% over 90 days, but account remains in good financial standing.",
+    "expected_segment": "declining_activity",
+    "expected_action": "Value re-engagement email with 50% Bonus Data pack and usage optimization check.",
+    "profile": {
+      "customer_id": "CUST-1003",
+      "full_name": "Sophia Rodriguez",
+      "email": "sophia.rodriguez@example.com",
+      "account_type": "4G_LTE_PREMIUM",
+      "billing": {
+        "outstanding_balance": 0.0,
+        "days_overdue": 0,
+        "invoice_number": "INV-2026-1003",
+        "due_date": "2026-11-20",
+        "last_payment_date": "2026-10-20",
+        "last_payment_amount": 55.00,
+        "payment_method_on_file": true,
+        "late_payment_count_12m": 0
+      },
+      "engagement": {
+        "tenure_months": 14,
+        "current_plan_name": "LTE Max Flex",
+        "monthly_spend": 55.00,
+        "loyalty_tier": "SILVER",
+        "csat_score": 7.5,
+        "nps_category": "PASSIVE",
+        "usage_trend_pct": -38.0,
+        "days_since_last_activity": 8,
+        "data_allowance_gb": 30.0,
+        "data_used_gb": 9.5
+      },
+      "communication": {
+        "last_contact_date": "2026-09-01",
+        "last_contact_channel": "EMAIL",
+        "last_contact_category": "NEWSLETTER",
+        "contact_count_last_30d": 0,
+        "email_opt_in": true,
+        "sms_opt_in": true
+      },
+      "tags": ["churn_risk_moderate", "usage_drop"]
+    }
+  },
+  {
+    "scenario_id": "SCENARIO_4_DORMANT",
+    "scenario_title": "Inactive / Dormant Customer",
+    "description": "Zero activity for 68 days; high churn risk; account active with zero overdue balance.",
+    "expected_segment": "dormant",
+    "expected_action": "Low-pressure win-back survey with $15 welcome-back service credit.",
+    "profile": {
+      "customer_id": "CUST-1004",
+      "full_name": "David Miller",
+      "email": "david.miller@example.com",
+      "account_type": "RETAIL_MOBILE_STANDALONE",
+      "billing": {
+        "outstanding_balance": 0.0,
+        "days_overdue": 0,
+        "invoice_number": "INV-2026-1004",
+        "due_date": "2026-11-25",
+        "last_payment_date": "2026-10-25",
+        "last_payment_amount": 35.00,
+        "payment_method_on_file": true,
+        "late_payment_count_12m": 1
+      },
+      "engagement": {
+        "tenure_months": 9,
+        "current_plan_name": "Essential Talk & Data",
+        "monthly_spend": 35.00,
+        "loyalty_tier": "STANDARD",
+        "csat_score": 6.8,
+        "nps_category": "PASSIVE",
+        "usage_trend_pct": -85.0,
+        "days_since_last_activity": 68,
+        "data_allowance_gb": 15.0,
+        "data_used_gb": 0.4
+      },
+      "communication": {
+        "last_contact_date": "2026-08-15",
+        "last_contact_channel": "EMAIL",
+        "last_contact_category": "MONTHLY_STATEMENT",
+        "contact_count_last_30d": 0,
+        "email_opt_in": true,
+        "sms_opt_in": false
+      },
+      "tags": ["dormant_risk", "inactivity_60d"]
+    }
+  },
+  {
+    "scenario_id": "SCENARIO_5_OVERDUE_STAGE_1",
+    "scenario_title": "Overdue Bill (Stage 1 Courteous)",
+    "description": "Active bill of $65.40 past due by 8 days; first notification.",
+    "expected_segment": "payment_reminder",
+    "expected_action": "Courteous reminder with portal link and dispute contact path; promotional offers blocked.",
+    "profile": {
+      "customer_id": "CUST-1005",
+      "full_name": "Amara Okafor",
+      "email": "amara.okafor@example.com",
+      "account_type": "POSTPAID_MOBILE",
+      "billing": {
+        "outstanding_balance": 65.40,
+        "days_overdue": 8,
+        "invoice_number": "INV-2026-1005-OCT",
+        "due_date": "2026-11-01",
+        "last_payment_date": "2026-09-30",
+        "last_payment_amount": 65.40,
+        "payment_method_on_file": false,
+        "late_payment_count_12m": 1
+      },
+      "engagement": {
+        "tenure_months": 15,
+        "current_plan_name": "Smart Choice 5G",
+        "monthly_spend": 65.40,
+        "loyalty_tier": "SILVER",
+        "csat_score": 8.2,
+        "nps_category": "PASSIVE",
+        "usage_trend_pct": 0.0,
+        "days_since_last_activity": 2,
+        "data_allowance_gb": 40.0,
+        "data_used_gb": 28.0
+      },
+      "communication": {
+        "last_contact_date": "2026-10-15",
+        "last_contact_channel": "EMAIL",
+        "last_contact_category": "MONTHLY_STATEMENT",
+        "contact_count_last_30d": 1,
+        "email_opt_in": true,
+        "sms_opt_in": true
+      },
+      "tags": ["payment_pending", "stage_1"]
+    }
+  },
+  {
+    "scenario_id": "SCENARIO_6_OVERDUE_STAGE_2",
+    "scenario_title": "Overdue Bill (Stage 2 Firmer)",
+    "description": "Active bill of $185.00 past due by 24 days; prompt resolution required.",
+    "expected_segment": "payment_reminder",
+    "expected_action": "Direct firm notice, warning of service continuation risks, hardship support and dispute path.",
+    "profile": {
+      "customer_id": "CUST-1006",
+      "full_name": "Liam O'Connor",
+      "email": "liam.oconnor@example.com",
+      "account_type": "FAMILY_CONNECT_SHARE",
+      "billing": {
+        "outstanding_balance": 185.00,
+        "days_overdue": 24,
+        "invoice_number": "INV-2026-1006-OCT",
+        "due_date": "2026-10-16",
+        "last_payment_date": "2026-09-15",
+        "last_payment_amount": 185.00,
+        "payment_method_on_file": true,
+        "late_payment_count_12m": 2
+      },
+      "engagement": {
+        "tenure_months": 22,
+        "current_plan_name": "Family Connect Multi-Line",
+        "monthly_spend": 185.00,
+        "loyalty_tier": "GOLD",
+        "csat_score": 7.0,
+        "nps_category": "PASSIVE",
+        "usage_trend_pct": -5.0,
+        "days_since_last_activity": 3,
+        "data_allowance_gb": 100.0,
+        "data_used_gb": 74.0
+      },
+      "communication": {
+        "last_contact_date": "2026-10-25",
+        "last_contact_channel": "EMAIL",
+        "last_contact_category": "BILLING_REMINDER_STAGE_1",
+        "contact_count_last_30d": 2,
+        "email_opt_in": true,
+        "sms_opt_in": true
+      },
+      "tags": ["overdue_stage_2", "service_risk"]
+    }
+  },
+  {
+    "scenario_id": "SCENARIO_7_REFUSAL_MISSING_CONSENT",
+    "scenario_title": "Refusal / Blocked: Missing Consent (Opt-Out)",
+    "description": "Customer has revoked email marketing consent (email_opt_in: false).",
+    "expected_segment": "consistent",
+    "expected_action": "System refuses/blocks draft generation with CRITICAL guardrail violation: COMMUNICATION_CONSENT.",
+    "profile": {
+      "customer_id": "CUST-1007",
+      "full_name": "Sarah Connor",
+      "email": "sarah.connor@example.com",
+      "account_type": "BROADBAND_SECURE",
+      "billing": {
+        "outstanding_balance": 0.0,
+        "days_overdue": 0,
+        "invoice_number": "INV-2026-1007",
+        "due_date": "2026-11-30",
+        "last_payment_date": "2026-10-30",
+        "last_payment_amount": 70.00,
+        "payment_method_on_file": true,
+        "late_payment_count_12m": 0
+      },
+      "engagement": {
+        "tenure_months": 20,
+        "current_plan_name": "Broadband Secure 500",
+        "monthly_spend": 70.00,
+        "loyalty_tier": "SILVER",
+        "csat_score": 8.0,
+        "nps_category": "PASSIVE",
+        "usage_trend_pct": 1.0,
+        "days_since_last_activity": 1,
+        "data_allowance_gb": 500.0,
+        "data_used_gb": 320.0
+      },
+      "communication": {
+        "last_contact_date": "2026-09-10",
+        "last_contact_channel": "EMAIL",
+        "last_contact_category": "OPT_OUT_CONFIRMATION",
+        "contact_count_last_30d": 0,
+        "email_opt_in": false,
+        "sms_opt_in": false
+      },
+      "tags": ["opted_out", "suppression_list", "do_not_market"]
+    }
+  },
+  {
+    "scenario_id": "SCENARIO_8_REFUSAL_CONTRADICTORY_OVERDUE",
+    "scenario_title": "Refusal / Blocked: Contradictory Overdue Data",
+    "description": "Customer has a large overdue balance ($240) but is tagged as reward candidate; offer engine strictly blocks promotional reward.",
+    "expected_segment": "payment_reminder",
+    "expected_action": "Hard policy gate prevents attaching promotional rewards to overdue accounts. Classified strictly as payment reminder.",
+    "profile": {
+      "customer_id": "CUST-1008",
+      "full_name": "Jordan Hayes",
+      "email": "jordan.hayes@example.com",
+      "account_type": "POSTPAID_MOBILE",
+      "billing": {
+        "outstanding_balance": 240.00,
+        "days_overdue": 35,
+        "invoice_number": "INV-2026-1008-SEP",
+        "due_date": "2026-10-05",
+        "last_payment_date": "2026-08-30",
+        "last_payment_amount": 80.00,
+        "payment_method_on_file": false,
+        "late_payment_count_12m": 3
+      },
+      "engagement": {
+        "tenure_months": 28,
+        "current_plan_name": "Unlimited World Traveler",
+        "monthly_spend": 80.00,
+        "loyalty_tier": "GOLD",
+        "csat_score": 5.2,
+        "nps_category": "DETRACTOR",
+        "usage_trend_pct": -30.0,
+        "days_since_last_activity": 4,
+        "data_allowance_gb": 60.0,
+        "data_used_gb": 35.0
+      },
+      "communication": {
+        "last_contact_date": "2026-10-20",
+        "last_contact_channel": "EMAIL",
+        "last_contact_category": "BILLING_REMINDER_STAGE_2",
+        "contact_count_last_30d": 2,
+        "email_opt_in": true,
+        "sms_opt_in": true
+      },
+      "tags": ["high_overdue", "stage_3", "dispute_risk"]
+    }
+  }
+]

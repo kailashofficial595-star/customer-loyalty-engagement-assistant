@@ -1,0 +1,61 @@
+{
+  "version": "1.0.0",
+  "approved_offers": [
+    {
+      "offer_id": "OFFER-LOYALTY-5G-DATA-20GB",
+      "name": "Complimentary 20GB High-Speed Loyalty Boost",
+      "category": "LOYALTY_REWARD",
+      "eligible_segments": ["loyalty_candidate", "consistent"],
+      "min_tenure_months": 6,
+      "min_monthly_spend": 50.0,
+      "max_overdue_balance": 0.0,
+      "requires_gold_plus": false,
+      "value_description": "20GB Extra High-Speed Data (Value $25.00 complimentary)",
+      "expiry_days": 30,
+      "terms": "Valid for 30 days from activation date. Applies automatically to active 5G/LTE line. Non-transferable.",
+      "channels": ["EMAIL", "SMS", "IN_APP"]
+    },
+    {
+      "offer_id": "OFFER-VIP-STREAMING-PASS",
+      "name": "3-Month Premium Entertainment Pass",
+      "category": "VIP_PERK",
+      "eligible_segments": ["loyalty_candidate"],
+      "min_tenure_months": 12,
+      "min_monthly_spend": 80.0,
+      "max_overdue_balance": 0.0,
+      "requires_gold_plus": true,
+      "value_description": "3 Months Free Access to Streaming & 4K Cloud Gaming ($45 value)",
+      "expiry_days": 45,
+      "terms": "Exclusive for Gold, Platinum, and Diamond loyalty tier members. Requires active account in good standing.",
+      "channels": ["EMAIL", "IN_APP"]
+    },
+    {
+      "offer_id": "OFFER-REENGAGE-BOOSTER-50",
+      "name": "50% Bonus Data & Plan Refresh Pack",
+      "category": "REENGAGEMENT",
+      "eligible_segments": ["declining_activity"],
+      "min_tenure_months": 3,
+      "min_monthly_spend": 30.0,
+      "max_overdue_balance": 0.0,
+      "requires_gold_plus": false,
+      "value_description": "50% Bonus Allowance on your current plan for next 2 billing cycles",
+      "expiry_days": 14,
+      "terms": "Applies automatically upon clicking activation link. No contract renewal or lock-in fee.",
+      "channels": ["EMAIL", "IN_APP"]
+    },
+    {
+      "offer_id": "OFFER-WINBACK-WELCOME-CREDIT",
+      "name": "$15 Service Credit Reactivation Special",
+      "category": "WINBACK",
+      "eligible_segments": ["dormant"],
+      "min_tenure_months": 1,
+      "min_monthly_spend": 0.0,
+      "max_overdue_balance": 0.0,
+      "requires_gold_plus": false,
+      "value_description": "$15 Bill Credit applied on active account renewal",
+      "expiry_days": 21,
+      "terms": "Credited to next month invoice upon account reactivation or any qualifying transaction.",
+      "channels": ["EMAIL"]
+    }
+  ]
+}

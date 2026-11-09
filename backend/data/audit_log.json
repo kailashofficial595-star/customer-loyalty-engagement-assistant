@@ -1,0 +1,30 @@
+[
+  {
+    "audit_id": "AUD-9FCB3E0386",
+    "timestamp": "2026-11-09 15:43:46",
+    "draft_id": "DRF-05233F24",
+    "customer_id": "CUST-1001",
+    "customer_email_masked": "el***@example.com",
+    "primary_segment": "consistent",
+    "strategy_objective": "APPRECIATION_RETENTION",
+    "model_version": "grounded-deterministic-engine-v2.2",
+    "template_version": "telecom-policy-template-v1.4",
+    "evidence_fields": {
+      "tenure_months": 18,
+      "plan_name": "5G Unlimited Plus",
+      "monthly_spend": 65.0,
+      "days_overdue": 0,
+      "outstanding_balance": 0.0,
+      "loyalty_tier": "SILVER",
+      "email_opt_in": true
+    },
+    "guardrail_verdict": "PASSED: All compliance, privacy, groundedness, and tone guardrails satisfied.",
+    "guardrail_critical_count": 0,
+    "guardrail_warning_count": 0,
+    "reviewer_action": "APPROVE",
+    "reviewer_id": "auditor_jenny",
+    "send_status": "DELIVERED",
+    "delivery_timestamp": "2026-11-09 15:43:46",
+    "notes": "Verified facts and tone. Ready to deliver."
+  }
+]
